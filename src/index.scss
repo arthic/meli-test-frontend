@@ -1,0 +1,181 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: sans-serif;
+    .search-container {
+        background-color: #ffe600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0;
+        img {
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+    .container-search-box {
+        display: flex;
+        align-items: center;
+        max-width: 600px;
+        margin-left: 1rem;
+        img {
+            width: 33px;
+            background-color: #eeeeee;
+            padding: 7px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        input {
+            width: 600px;
+            height: 33px;
+            border: none;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            font-size: 16px;
+            outline: none;
+            padding: 0 1rem;
+            color: #333333;
+        }
+        input::placeholder {
+            color: #999;
+            font-weight: 100;
+            font-family: sans-serif;
+        }
+    }
+    .meli-container {
+        max-width: 669px;
+        margin: 0 auto;
+    }
+    .global-category {
+        font-size: 14px;
+        margin: 14px 0;
+        color: #999999;
+        span {
+            color: #666666;
+        }
+    }
+    .container-result, .item-details {
+        background-color: white;
+        border-radius: 3px;
+    }
+    .result-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-weight: 300;
+        border-bottom: solid 1px #eeeeee;
+        cursor: pointer;
+        img {
+            width: 180px;
+            border-radius: 4px;
+            margin: 15px;
+        }
+    }
+    .item-result-description img {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        margin-left: 8px;
+    }
+    .container-price {
+        display: flex;
+        align-items: center;
+        padding-bottom: 8px;
+        sub {
+            position: relative;
+            bottom: 4px;
+            font-size: 15px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .item-result-description-facs {
+        font-size: 14px;
+        p {
+            margin: 0;
+            max-width: 250px;
+        }
+    }
+    .item-result-description {
+        margin-top: 33px;
+    }
+    .item-result-city {
+        font-size: 13px;
+        margin-top: 44px;
+        margin-right: 16px;
+        color: #333333;
+    }
+    .row-one {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .item-details-main {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem
+    }
+    .item-details {
+        img {
+            max-height: 400px;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 18px;
+            max-width: 200px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+        button {
+            background-color: #3483fa;
+            border: none;
+            max-width: 170px;
+            width: 100%;
+            border-radius: 4px;
+            padding: 5px 0;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 100;
+            font-size: 15px;
+        }
+    }
+    .total-sales {
+        font-size: 13px;
+        color: #333333;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    .item-details-price {
+        font-size: 28px;
+        font-weight: 300;
+        margin-top: 0;
+        color: #333333;
+        sub {
+            position: relative;
+            bottom: 8px;
+            font-size: 15px;
+        }
+    }
+    .item-details-description {
+        margin: 2.5rem 1rem;
+        padding-bottom: 6px;
+        max-width: 400px;
+        h2 {
+            font-size: 18px;
+            color: #666666;
+            font-weight: 500;
+        }
+        p {
+            font-size: 13px;
+            color: #999999;
+            margin-top: 22px;
+        }
+    }
+}
