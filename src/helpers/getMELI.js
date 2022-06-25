@@ -2,7 +2,7 @@ export const getMeliSearch = async (category) => {
     try {
         let busqueda = encodeURI(category)
         console.log(busqueda);
-        const url = `https://meli-test-backend.herokuapp.com/api/items?q=​${busqueda}`
+        const url = `https://meli-test33.herokuapp.com/api/items?q=​${busqueda}`
 
         const resp = await fetch(url)
         console.log(resp);
@@ -15,7 +15,7 @@ export const getMeliSearch = async (category) => {
 export const getItemDescription = async (item) => {
     try {
         let busqueda = encodeURI(item)
-        const url = `https://meli-test-backend.herokuapp.com/api/items/${busqueda}`
+        const url = `https://meli-test33.herokuapp.com/api/items/${busqueda}`
 
         const resp = await fetch(url)
         return resp
